@@ -1,0 +1,265 @@
+✅ Clicked: a.cc-link -> But me wait!
+✅ Clicked: a.cc-btn.cc-dismiss -> Me want it!
+❌ Failed to interact with button.mat-focus-indicator.mat-button.mat-button-base: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button.mat-focus-indicator.mat-button.mat-button-base")
+  -     - locator resolved to 5 elements. Proceeding with the first one: <button mat-button="" _ngcontent-hbd-c131="" class="mat-focus-indicator mat-button mat-button-base">…</button>
+  -   - attempting click action
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is not visible
+  -     - retrying click action
+  -     - waiting 20ms
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is not visible
+  -     - retrying click action
+  -       - waiting 100ms
+  -     11 × waiting for element to be visible, enabled and stable
+  -        - element is not visible
+  -      - retrying click action
+  -        - waiting 500ms
+
+❌ Failed to interact with a.mat-list-item.mat-focus-indicator.ng-star-inserted: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("a.mat-list-item.mat-focus-indicator.ng-star-inserted")
+  -     - locator resolved to 3 elements. Proceeding with the first one: <a href="#/login" mat-list-item="" routerlink="/login" _ngcontent-hbd-c131="" aria-label="Go to login page" class="mat-list-item mat-focus-indicator ng-star-inserted">…</a>
+  -   - attempting click action
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is not visible
+  -     - retrying click action
+  -     - waiting 20ms
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is not visible
+  -     - retrying click action
+  -       - waiting 100ms
+  -     10 × waiting for element to be visible, enabled and stable
+  -        - element is not visible
+  -      - retrying click action
+  -        - waiting 500ms
+  -     - waiting for element to be visible, enabled and stable
+
+❌ Failed to interact with a.mat-list-item.mat-focus-indicator: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("a.mat-list-item.mat-focus-indicator")
+  -     - locator resolved to 6 elements. Proceeding with the first one: <a href="#/login" mat-list-item="" routerlink="/login" _ngcontent-hbd-c131="" aria-label="Go to login page" class="mat-list-item mat-focus-indicator ng-star-inserted">…</a>
+  -   - attempting click action
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is not visible
+  -     - retrying click action
+  -     - waiting 20ms
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is not visible
+  -     - retrying click action
+  -       - waiting 100ms
+  -     10 × waiting for element to be visible, enabled and stable
+  -        - element is not visible
+  -      - retrying click action
+  -        - waiting 500ms
+  -     - waiting for element to be visible, enabled and stable
+
+❌ Failed to interact with a.mat-list-item.mat-focus-indicator.mat-list-item-with-avatar.ng-star-inserted: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("a.mat-list-item.mat-focus-indicator.mat-list-item-with-avatar.ng-star-inserted")
+  -     - locator resolved to <a mat-list-item="" _ngcontent-hbd-c131="" aria-label="Go to OWASP Juice Shop GitHub page" href="./redirect?to=https://github.com/juice-shop/juice-shop" class="mat-list-item mat-focus-indicator mat-list-item-with-avatar ng-star-inserted">…</a>
+  -   - attempting click action
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is not visible
+  -     - retrying click action
+  -     - waiting 20ms
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is not visible
+  -     - retrying click action
+  -       - waiting 100ms
+  -     11 × waiting for element to be visible, enabled and stable
+  -        - element is not visible
+  -      - retrying click action
+  -        - waiting 500ms
+
+❌ Failed to interact with button.mat-focus-indicator.mat-tooltip-trigger.mat-button.mat-button-base: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button.mat-focus-indicator.mat-tooltip-trigger.mat-button.mat-button-base")
+  -     - locator resolved to 2 elements. Proceeding with the first one: <button mat-button="" _ngcontent-hbd-c124="" aria-label="Open Sidenav" mattooltipposition="below" cdk-describedby-host="hbd-1" aria-describedby="cdk-describedby-message-hbd-1-2" class="mat-focus-indicator mat-tooltip-trigger mat-button mat-button-base">…</button>
+  -   - attempting click action
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is visible, enabled and stable
+  -       - scrolling into view if needed
+  -       - done scrolling
+  -       - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -     - retrying click action
+  -     - waiting 20ms
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is visible, enabled and stable
+  -       - scrolling into view if needed
+  -       - done scrolling
+  -       - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -     - retrying click action
+  -       - waiting 100ms
+  -     10 × waiting for element to be visible, enabled and stable
+  -        - element is visible, enabled and stable
+  -        - scrolling into view if needed
+  -        - done scrolling
+  -        - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -      - retrying click action
+  -        - waiting 500ms
+  -     - waiting for element to be visible, enabled and stable
+
+❌ Failed to interact with button.mat-focus-indicator.buttons.mat-button.mat-button-base: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button.mat-focus-indicator.buttons.mat-button.mat-button-base")
+  -     - locator resolved to 3 elements. Proceeding with the first one: <button tabindex="0" mat-button="" routerlink="/search" _ngcontent-hbd-c124="" aria-label="Back to homepage" class="mat-focus-indicator buttons mat-button mat-button-base">…</button>
+  -   - attempting click action
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is visible, enabled and stable
+  -       - scrolling into view if needed
+  -       - done scrolling
+  -       - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -     - retrying click action
+  -     - waiting 20ms
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is visible, enabled and stable
+  -       - scrolling into view if needed
+  -       - done scrolling
+  -       - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -     - retrying click action
+  -       - waiting 100ms
+  -     11 × waiting for element to be visible, enabled and stable
+  -        - element is visible, enabled and stable
+  -        - scrolling into view if needed
+  -        - done scrolling
+  -        - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -      - retrying click action
+  -        - waiting 500ms
+  -     - waiting for element to be visible, enabled and stable
+
+🔄 Expanding dropdown: account_circle Account using button.mat-focus-indicator.mat-menu-trigger.buttons.mat-button.mat-button-base
+❌ Failed to interact with button.mat-focus-indicator.mat-menu-trigger.buttons.mat-button.mat-button-base: Page.hover: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button.mat-focus-indicator.mat-menu-trigger.buttons.mat-button.mat-button-base")
+  -     - locator resolved to 2 elements. Proceeding with the first one: <button fxshow="" mat-button="" fxhide.lt-md="" id="navbarAccount" aria-haspopup="menu" _ngcontent-hbd-c124="" aria-label="Show/hide account menu" class="mat-focus-indicator mat-menu-trigger buttons mat-button mat-button-base">…</button>
+  -   - attempting hover action
+  -     2 × waiting for element to be visible and stable
+  -       - element is visible and stable
+  -       - scrolling into view if needed
+  -       - done scrolling
+  -       - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -     - retrying hover action
+  -     - waiting 20ms
+  -     2 × waiting for element to be visible and stable
+  -       - element is visible and stable
+  -       - scrolling into view if needed
+  -       - done scrolling
+  -       - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -     - retrying hover action
+  -       - waiting 100ms
+  -     11 × waiting for element to be visible and stable
+  -        - element is visible and stable
+  -        - scrolling into view if needed
+  -        - done scrolling
+  -        - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -      - retrying hover action
+  -        - waiting 500ms
+
+🔄 Expanding dropdown: language EN using button.mat-focus-indicator.mat-tooltip-trigger.mat-menu-trigger.buttons.mat-button.mat-button-base
+❌ Failed to interact with button.mat-focus-indicator.mat-tooltip-trigger.mat-menu-trigger.buttons.mat-button.mat-button-base: Page.hover: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button.mat-focus-indicator.mat-tooltip-trigger.mat-menu-trigger.buttons.mat-button.mat-button-base")
+  -     - locator resolved to <button mat-button="" aria-haspopup="menu" _ngcontent-hbd-c124="" mattooltipposition="below" cdk-describedby-host="hbd-1" aria-label="Language selection menu" aria-describedby="cdk-describedby-message-hbd-1-3" class="mat-focus-indicator mat-tooltip-trigger mat-menu-trigger buttons mat-button mat-button-base">…</button>
+  -   - attempting hover action
+  -     2 × waiting for element to be visible and stable
+  -       - element is visible and stable
+  -       - scrolling into view if needed
+  -       - done scrolling
+  -       - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -     - retrying hover action
+  -     - waiting 20ms
+  -     2 × waiting for element to be visible and stable
+  -       - element is visible and stable
+  -       - scrolling into view if needed
+  -       - done scrolling
+  -       - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -     - retrying hover action
+  -       - waiting 100ms
+  -     10 × waiting for element to be visible and stable
+  -        - element is visible and stable
+  -        - scrolling into view if needed
+  -        - done scrolling
+  -        - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -      - retrying hover action
+  -        - waiting 500ms
+  -     - waiting for element to be visible and stable
+
+❌ Failed to interact with button.mat-focus-indicator.mat-tooltip-trigger.mat-paginator-navigation-previous.mat-icon-button.mat-button-base.mat-button-disabled: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button.mat-focus-indicator.mat-tooltip-trigger.mat-paginator-navigation-previous.mat-icon-button.mat-button-base.mat-button-disabled")
+  -     - locator resolved to <button type="button" disabled="true" mat-icon-button="" aria-label="Previous page" class="mat-focus-indicator mat-tooltip-trigger mat-paginator-navigation-previous mat-icon-button mat-button-base mat-button-disabled">…</button>
+  -   - attempting click action
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is not enabled
+  -     - retrying click action
+  -     - waiting 20ms
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is not enabled
+  -     - retrying click action
+  -       - waiting 100ms
+  -     11 × waiting for element to be visible, enabled and stable
+  -        - element is not enabled
+  -      - retrying click action
+  -        - waiting 500ms
+
+❌ Failed to interact with button.mat-focus-indicator.mat-tooltip-trigger.mat-paginator-navigation-next.mat-icon-button.mat-button-base: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button.mat-focus-indicator.mat-tooltip-trigger.mat-paginator-navigation-next.mat-icon-button.mat-button-base")
+  -     - locator resolved to <button type="button" mat-icon-button="" aria-label="Next page" class="mat-focus-indicator mat-tooltip-trigger mat-paginator-navigation-next mat-icon-button mat-button-base">…</button>
+  -   - attempting click action
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is visible, enabled and stable
+  -       - scrolling into view if needed
+  -       - done scrolling
+  -       - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -     - retrying click action
+  -     - waiting 20ms
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is visible, enabled and stable
+  -       - scrolling into view if needed
+  -       - done scrolling
+  -       - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -     - retrying click action
+  -       - waiting 100ms
+  -     10 × waiting for element to be visible, enabled and stable
+  -        - element is visible, enabled and stable
+  -        - scrolling into view if needed
+  -        - done scrolling
+  -        - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container bluegrey-lightgreen-theme">…</div> subtree intercepts pointer events
+  -      - retrying click action
+  -        - waiting 500ms
+  -     - waiting for element to be visible, enabled and stable
+  -     - element is visible, enabled and stable
+  -     - scrolling into view if needed
+  -     - done scrolling
+
+❌ Failed to interact with a: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("a")
+  -     - locator resolved to 10 elements. Proceeding with the first one: <a tabindex="0" role="button" class="cc-link" target="_blank" rel="noopener noreferrer nofollow" aria-label="learn more about cookies" href="https://www.youtube.com/watch?v=9PnbKL3wuH4">But me wait!</a>
+  -   - attempting click action
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is not visible
+  -     - retrying click action
+  -     - waiting 20ms
+  -     2 × waiting for element to be visible, enabled and stable
+  -       - element is not visible
+  -     - retrying click action
+  -       - waiting 100ms
+  -     10 × waiting for element to be visible, enabled and stable
+  -        - element is not visible
+  -      - retrying click action
+  -        - waiting 500ms
+  -     - waiting for element to be visible, enabled and stable
+
+✅ Clicked: button.mat-focus-indicator.mat-tooltip-trigger.mat-raised-button.mat-button-base.mat-warn.ng-star-inserted -> schoolHelp getting started
+❌ Failed to interact with button.mat-focus-indicator.close-dialog.mat-raised-button.mat-button-base.mat-primary.ng-star-inserted: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button.mat-focus-indicator.close-dialog.mat-raised-button.mat-button-base.mat-primary.ng-star-inserted")
+
+📄 Execution report saved as execution_report.csv
+
+Process finished with exit code 0
