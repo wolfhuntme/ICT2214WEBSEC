@@ -26,7 +26,6 @@ def parse_nested_columns(row_dict, nested_cols=None):
     flattened = {}
     for col in nested_cols:
         raw_value = row_dict.get(col, "")
-        # If empty or NaN, mark it as NoValue
         if pd.isna(raw_value) or raw_value == "":
             flattened[col] = "NoValue"
             continue
@@ -68,7 +67,6 @@ def flatten_csv_data(csv_path, nested_cols=None, output_path="flattened_output.c
     for _, row in df.iterrows():
         row_dict = row.to_dict()
         nested_dict = parse_nested_columns(row_dict, nested_cols)
-        # Remove original columns
         for col in nested_cols:
             if col in row_dict:
                 del row_dict[col]
@@ -113,7 +111,6 @@ def analyze_flow_consistency(workflow_rows, monitored_prefixes=None):
         param_summary = {}
         all_monitored_keys = set()
 
-        # Gather all keys that start with monitored prefixes
         for r in rows:
             for key in r.keys():
                 if any(key.startswith(prefix) for prefix in monitored_prefixes):
@@ -128,7 +125,6 @@ def analyze_flow_consistency(workflow_rows, monitored_prefixes=None):
                 if val != "NoValue":
                     steps_present.append(idx)
             present_in_all = (len(steps_present) == len(rows))
-            # Determine consistency and count changes
             if values and all(v == values[0] for v in values):
                 consistent = True
                 change_details = "Never changed"
@@ -231,7 +227,6 @@ def generate_detailed_insights(workflow_rows, monitored_prefixes=None, output_cs
             for key in r.keys():
                 if any(key.startswith(pref) for pref in monitored_prefixes):
                     all_keys.add(key)
-        # Filter out top-level keys; keep sub-keys only
         filtered_keys = [k for k in all_keys if "." in k or "[" in k]
         for key in filtered_keys:
             values = [r.get(key, "NoValue") for r in rows]
@@ -239,7 +234,7 @@ def generate_detailed_insights(workflow_rows, monitored_prefixes=None, output_cs
             while start_idx < len(values):
                 current_value = values[start_idx]
                 end_idx = start_idx
-                while end_idx + 1 < len(values) and values[end_idx+1] == current_value:
+                while end_idx + 1 < len(values) and values[end_idx + 1] == current_value:
                     end_idx += 1
                 if current_value != "NoValue":
                     insights.append({
@@ -270,7 +265,6 @@ def export_workflow_summary(workflow_sequences, flow_consistency_summary, df_ml,
         }
         param_info = flow_consistency_summary.get(flow_id, {})
         details = []
-        # Determine the parameter most likely to be a flaw based on the highest change_count
         suspect_param = None
         max_changes = 0
         for key, info in param_info.items():
@@ -308,12 +302,23 @@ def export_workflow_summary(workflow_sequences, flow_consistency_summary, df_ml,
         print(f"Pattern: {pattern_str}, Support: {support}")
 
 ###############################################################################
-# 9. Graph Visualization of Each Flow (Numeric labels)
+# 9. Graph Visualization of Each Flow (Numeric labels with shifted arrow labeling)
 ###############################################################################
 def generate_flow_graphs(workflow_sequences, workflow_rows, flow_consistency_summary,
                          output_dir="flow_graphs", show_param_changes=True):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
+
+    # New helper: get parameter changes at a node based on a change from the previous step.
+    def get_param_changes_at_node(param_summary, node_idx):
+        # node_idx is 1-indexed; compare value at (node_idx-1) with (node_idx-2)
+        changes = []
+        for key, info in param_summary.items():
+            vals = info.get("all_values", [])
+            if node_idx > 1 and node_idx-1 < len(vals):
+                if vals[node_idx-2] != vals[node_idx-1]:
+                    changes.append(key)
+        return changes
 
     for flow_id, seq in workflow_sequences.items():
         if len(seq) == 0:
@@ -329,25 +334,19 @@ def generate_flow_graphs(workflow_sequences, workflow_rows, flow_consistency_sum
 
         param_summary = flow_consistency_summary.get(flow_id, {})
 
-        def get_param_changes_at_transition(param_summary, step_idx, next_idx):
-            changes = []
-            for key, info in param_summary.items():
-                vals = info.get("all_values", [])
-                if 0 <= (step_idx - 1) < len(vals) and 0 <= (next_idx - 1) < len(vals):
-                    if vals[step_idx - 1] != vals[next_idx - 1]:
-                        changes.append(key)
-            return changes
-
+        # Instead of labeling the arrow based on the transition (i, i+1),
+        # we shift the label so that if a change is detected at step i,
+        # it will be displayed on the arrow leaving node i.
         for i in range(1, len(seq)):
             src = node_names[i-1]
             dst = node_names[i]
-            if show_param_changes:
-                changed_params = get_param_changes_at_transition(param_summary, i, i+1)
-                if changed_params:
-                    edge_label = "\\n".join(changed_params)
-                    edge = pydot.Edge(src, dst, label=edge_label)
-                else:
-                    edge = pydot.Edge(src, dst)
+            changed_params = []
+            # For arrow from node i to node i+1, if i >= 2 then check changes at node i.
+            if i >= 2:
+                changed_params = get_param_changes_at_node(param_summary, i)
+            if changed_params:
+                edge_label = "\\n".join(changed_params)
+                edge = pydot.Edge(src, dst, label=edge_label)
             else:
                 edge = pydot.Edge(src, dst)
             graph.add_edge(edge)
@@ -432,8 +431,8 @@ if __name__ == "__main__":
     # Step D: Frequent patterns (manual max pattern length)
     frequent_patterns = find_frequent_patterns(
         workflow_sequences,
-        min_support=5,        # Adjust support as needed
-        max_pattern_len=5     # Skip patterns longer than 5
+        min_support=5,
+        max_pattern_len=5
     )
 
     # Step E: Build ML dataset
