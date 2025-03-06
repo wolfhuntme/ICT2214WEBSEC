@@ -18,8 +18,7 @@ def parse_nested_columns(row_dict, nested_cols=None):
     """
     For each column in nested_cols, parse JSON and flatten sub-keys into names like
     session_data.bid or cookies[0].domain. We do NOT store a top-level dict or list,
-    only sub-keys, so you won't see just "session_data" in the output, but rather
-    "session_data.bid", "session_data.walletTotal", etc.
+    only sub-keys.
     """
     if nested_cols is None:
         nested_cols = ["session_data", "local_storage", "cookies"]
@@ -32,7 +31,6 @@ def parse_nested_columns(row_dict, nested_cols=None):
             flattened[col] = "NoValue"
             continue
 
-        # Try to parse as JSON
         try:
             parsed = json.loads(raw_value)
         except json.JSONDecodeError:
@@ -40,24 +38,19 @@ def parse_nested_columns(row_dict, nested_cols=None):
             continue
 
         if isinstance(parsed, dict):
-            # Flatten dictionary keys
             for k, v in parsed.items():
                 flattened[f"{col}.{k}"] = v if v != "" else "NoValue"
         elif isinstance(parsed, list):
-            # Flatten each item in the list by index
             if len(parsed) == 0:
                 flattened[col] = "NoValue"
             else:
                 for idx, item in enumerate(parsed):
                     if isinstance(item, dict):
                         for sub_k, sub_v in item.items():
-                            flattened[f"{col}[{idx}].{sub_k}"] = (
-                                sub_v if sub_v != "" else "NoValue"
-                            )
+                            flattened[f"{col}[{idx}].{sub_k}"] = sub_v if sub_v != "" else "NoValue"
                     else:
                         flattened[f"{col}[{idx}]"] = item if item != "" else "NoValue"
         else:
-            # If it's a primitive, store it directly
             flattened[col] = parsed if parsed != "" else "NoValue"
 
     return flattened
@@ -65,7 +58,6 @@ def parse_nested_columns(row_dict, nested_cols=None):
 def flatten_csv_data(csv_path, nested_cols=None, output_path="flattened_output.csv"):
     """
     Reads the CSV, parses nested JSON columns, and exports a flattened CSV.
-    Dynamically captures all sub-keys from session_data, local_storage, and cookies.
     Removes the original nested columns to avoid duplication.
     """
     if nested_cols is None:
@@ -75,15 +67,11 @@ def flatten_csv_data(csv_path, nested_cols=None, output_path="flattened_output.c
     flattened_rows = []
     for _, row in df.iterrows():
         row_dict = row.to_dict()
-        # Parse/flatten JSON into sub-keys
         nested_dict = parse_nested_columns(row_dict, nested_cols)
-
-        # Remove original columns so they don't appear as duplicates
+        # Remove original columns
         for col in nested_cols:
             if col in row_dict:
                 del row_dict[col]
-
-        # Merge what's left of row_dict with the flattened sub-keys
         merged = {**row_dict, **nested_dict}
         flattened_rows.append(merged)
 
@@ -125,13 +113,12 @@ def analyze_flow_consistency(workflow_rows, monitored_prefixes=None):
         param_summary = {}
         all_monitored_keys = set()
 
-        # Gather all relevant keys
+        # Gather all keys that start with monitored prefixes
         for r in rows:
             for key in r.keys():
                 if any(key.startswith(prefix) for prefix in monitored_prefixes):
                     all_monitored_keys.add(key)
 
-        # Evaluate consistency
         for key in all_monitored_keys:
             values = []
             steps_present = []
@@ -140,20 +127,20 @@ def analyze_flow_consistency(workflow_rows, monitored_prefixes=None):
                 values.append(val)
                 if val != "NoValue":
                     steps_present.append(idx)
-
             present_in_all = (len(steps_present) == len(rows))
+            # Determine consistency and count changes
             if values and all(v == values[0] for v in values):
                 consistent = True
                 change_details = "Never changed"
+                change_count = 0
             else:
                 consistent = False
                 change_indices = []
                 for i in range(1, len(values)):
-                    if values[i] != values[i - 1]:
+                    if values[i] != values[i-1]:
                         change_indices.append(i + 1)
-                change_details = (
-                    f"Changed at steps: {change_indices}" if change_indices else "Inconsistent"
-                )
+                change_details = f"Changed at steps: {change_indices}" if change_indices else "Inconsistent"
+                change_count = len(change_indices)
 
             param_summary[key] = {
                 "present_in_all": present_in_all,
@@ -161,6 +148,7 @@ def analyze_flow_consistency(workflow_rows, monitored_prefixes=None):
                 "start_value": values[0] if values else "NoValue",
                 "end_value": values[-1] if values else "NoValue",
                 "change_details": change_details,
+                "change_count": change_count,
                 "all_values": values
             }
 
@@ -169,20 +157,18 @@ def analyze_flow_consistency(workflow_rows, monitored_prefixes=None):
     return flow_consistency_summary
 
 ###############################################################################
-# 4. Frequent Pattern Mining (PrefixSpan) - Manual max pattern length filtering
+# 4. Frequent Pattern Mining (PrefixSpan)
 ###############################################################################
 def find_frequent_patterns(workflow_sequences, min_support=2, max_pattern_len=None):
     sequences = list(workflow_sequences.values())
     ps = PrefixSpan(sequences)
-    ps.lazy = True  # yield patterns lazily to reduce memory usage
+    ps.lazy = True
 
     results = []
     for (pattern, support) in ps.frequent(min_support):
-        # If pattern is a list and max_pattern_len is set, skip long patterns.
         if max_pattern_len is not None and isinstance(pattern, list) and len(pattern) > max_pattern_len:
             continue
         results.append((pattern, support))
-
     return results
 
 ###############################################################################
@@ -196,8 +182,8 @@ def build_ml_dataset(workflow_sequences, flow_consistency_summary):
         features["num_steps"] = len(seq)
         inconsistency_count = 0
         details = []
-
         param_summary = flow_consistency_summary.get(flow_id, {})
+
         for key, info in param_summary.items():
             if not info["consistent"]:
                 inconsistency_count += 1
@@ -239,28 +225,23 @@ def generate_detailed_insights(workflow_rows, monitored_prefixes=None, output_cs
         monitored_prefixes = ["session_data", "local_storage", "cookies"]
 
     insights = []
-
     for flow_id, rows in workflow_rows.items():
         all_keys = set()
         for r in rows:
             for key in r.keys():
                 if any(key.startswith(pref) for pref in monitored_prefixes):
                     all_keys.add(key)
-
-        # (Optional) Filter out top-level duplicates if you only want sub-keys
+        # Filter out top-level keys; keep sub-keys only
         filtered_keys = [k for k in all_keys if "." in k or "[" in k]
-
-        # For each filtered key, find consecutive segments with the same value
         for key in filtered_keys:
             values = [r.get(key, "NoValue") for r in rows]
             start_idx = 0
             while start_idx < len(values):
                 current_value = values[start_idx]
                 end_idx = start_idx
-                while end_idx + 1 < len(values) and values[end_idx + 1] == current_value:
+                while end_idx + 1 < len(values) and values[end_idx+1] == current_value:
                     end_idx += 1
                 if current_value != "NoValue":
-                    # Instead of letters, use numeric segment labeling
                     insights.append({
                         "flow_id": flow_id,
                         "parameter": key,
@@ -276,31 +257,39 @@ def generate_detailed_insights(workflow_rows, monitored_prefixes=None, output_cs
     return df_insights
 
 ###############################################################################
-# 8. Export Workflow Summary CSV with Consistency & ML Predictions
+# 8. Export Workflow Summary CSV with Consistency, ML Predictions, and Most Suspect Parameter
 ###############################################################################
 def export_workflow_summary(workflow_sequences, flow_consistency_summary, df_ml, frequent_patterns,
                             output_csv="workflow_summary.csv"):
     summary_rows = []
     for flow_id, seq in workflow_sequences.items():
-        row = {"flow_id": flow_id,
-               "sequence": " -> ".join(seq),
-               "num_steps": len(seq)}
+        row = {
+            "flow_id": flow_id,
+            "sequence": " -> ".join(seq),
+            "num_steps": len(seq)
+        }
         param_info = flow_consistency_summary.get(flow_id, {})
         details = []
+        # Determine the parameter most likely to be a flaw based on the highest change_count
+        suspect_param = None
+        max_changes = 0
         for key, info in param_info.items():
             present = "Yes" if info["present_in_all"] else "Partial"
             consistency = "Consistent" if info["consistent"] else "Inconsistent"
-            details.append(
-                f"{key} ({present}, {consistency}, start: {info['start_value']}, end: {info['end_value']})"
-            )
+            details.append(f"{key} ({present}, {consistency}, start: {info['start_value']}, end: {info['end_value']})")
+            if not info["consistent"] and info["change_count"] > max_changes:
+                max_changes = info["change_count"]
+                suspect_param = key
+
         row["parameter_summary"] = " | ".join(details) if details else "No monitored parameters"
+        row["most_suspect_parameter"] = f"{suspect_param} (changed {max_changes} times)" if suspect_param else "None"
         summary_rows.append(row)
 
     df_summary = pd.DataFrame(summary_rows)
     df_final = df_summary.merge(df_ml, on="flow_id", how="left")
 
     desired_cols = ["flow_id", "sequence", "num_steps", "parameter_summary",
-                    "inconsistent_param_count", "inconsistency_details",
+                    "most_suspect_parameter", "inconsistent_param_count", "inconsistency_details",
                     "flaw_label", "predicted_flaw"]
     existing_cols = [col for col in desired_cols if col in df_final.columns]
     other_cols = [c for c in df_final.columns if c not in existing_cols]
@@ -332,9 +321,7 @@ def generate_flow_graphs(workflow_sequences, workflow_rows, flow_consistency_sum
 
         graph = pydot.Dot(f"Flow_{flow_id}", graph_type='digraph', rankdir='LR')
         node_names = []
-
         for i, action in enumerate(seq, start=1):
-            # Numeric labeling for each step
             node_label = f"Step {i}: {action}"
             node = pydot.Node(f"{flow_id}_{i}", label=node_label, shape="box")
             graph.add_node(node)
@@ -346,17 +333,16 @@ def generate_flow_graphs(workflow_sequences, workflow_rows, flow_consistency_sum
             changes = []
             for key, info in param_summary.items():
                 vals = info.get("all_values", [])
-                # step_idx and next_idx are 1-based
                 if 0 <= (step_idx - 1) < len(vals) and 0 <= (next_idx - 1) < len(vals):
                     if vals[step_idx - 1] != vals[next_idx - 1]:
                         changes.append(key)
             return changes
 
         for i in range(1, len(seq)):
-            src = node_names[i - 1]
+            src = node_names[i-1]
             dst = node_names[i]
             if show_param_changes:
-                changed_params = get_param_changes_at_transition(param_summary, i, i + 1)
+                changed_params = get_param_changes_at_transition(param_summary, i, i+1)
                 if changed_params:
                     edge_label = "\\n".join(changed_params)
                     edge = pydot.Edge(src, dst, label=edge_label)
@@ -374,10 +360,6 @@ def generate_flow_graphs(workflow_sequences, workflow_rows, flow_consistency_sum
 # 10. Merge Insights with Steps (HTML Visual Display, Numeric parsing)
 ###############################################################################
 def merge_flow_insights_with_steps(detailed_insights_df, workflow_sequences, output_html="visual_display.html"):
-    """
-    Because we are labeling segments as "1 to 5", "6 to 8", etc.,
-    we'll parse those numbers directly (instead of converting letters to steps).
-    """
     df_merged = detailed_insights_df.copy()
     actions_in_segment_list = []
 
@@ -387,14 +369,11 @@ def merge_flow_insights_with_steps(detailed_insights_df, workflow_sequences, out
         if flow_id not in workflow_sequences or " to " not in segment_str:
             actions_in_segment_list.append("")
             continue
-
-        # segment_str looks like "1 to 5"
         start_str, end_str = segment_str.split(" to ")
         try:
             start_step = int(start_str)
             end_step = int(end_str)
         except ValueError:
-            # If there's a parsing issue, skip
             actions_in_segment_list.append("")
             continue
 
@@ -404,14 +383,12 @@ def merge_flow_insights_with_steps(detailed_insights_df, workflow_sequences, out
             actions_in_segment_list.append("No actions (segment out of range)")
             continue
 
-        # sub_actions is from start_step..end_step, 1-based indexing
         sub_actions = all_actions[start_step - 1 : end_step]
         actions_str = " | ".join(sub_actions)
         actions_in_segment_list.append(actions_str)
 
     df_merged["actions_in_segment"] = actions_in_segment_list
 
-    # Build a column showing the full flow sequence
     flow_sequence_list = []
     for idx, row in df_merged.iterrows():
         flow_id = row["flow_id"]
@@ -422,19 +399,15 @@ def merge_flow_insights_with_steps(detailed_insights_df, workflow_sequences, out
             flow_sequence_list.append(" || ".join(labeled_steps))
         else:
             flow_sequence_list.append("No sequence found")
-
     df_merged["full_flow_sequence"] = flow_sequence_list
 
-    # Sort for a tidy display
     df_merged.sort_values(by=["flow_id", "parameter", "segment"], inplace=True)
-
     html_str = df_merged.to_html(index=False, escape=False)
     with open(output_html, "w", encoding="utf-8") as f:
         f.write("<html><head><meta charset='UTF-8'></head><body>")
         f.write("<h1>Detailed Flow Segments with Actions</h1>")
         f.write(html_str)
         f.write("</body></html>")
-
     print(f"Visual display exported to: {output_html}")
     return df_merged
 
@@ -443,7 +416,7 @@ def merge_flow_insights_with_steps(detailed_insights_df, workflow_sequences, out
 ###############################################################################
 if __name__ == "__main__":
     # Step A: Flatten the CSV
-    input_csv = "resource/automation_log10.csv"  # Update to your CSV file
+    input_csv = "resource/automation_log10.csv"  # Update path if needed
     df_flattened = flatten_csv_data(
         input_csv,
         ["session_data", "local_storage", "cookies"],
@@ -456,7 +429,7 @@ if __name__ == "__main__":
     # Step C: Analyze consistency
     flow_consistency_summary = analyze_flow_consistency(workflow_rows)
 
-    # Step D: Frequent patterns (with manual max pattern length)
+    # Step D: Frequent patterns (manual max pattern length)
     frequent_patterns = find_frequent_patterns(
         workflow_sequences,
         min_support=5,        # Adjust support as needed
@@ -475,7 +448,7 @@ if __name__ == "__main__":
         output_csv="detailed_insights.csv"
     )
 
-    # Step H: Export summary
+    # Step H: Export workflow summary (with suspect parameter)
     export_workflow_summary(
         workflow_sequences,
         flow_consistency_summary,
@@ -484,7 +457,7 @@ if __name__ == "__main__":
         "workflow_summary.csv"
     )
 
-    # Step I: Merge insights for an HTML display
+    # Step I: Merge insights for HTML display
     df_visual = merge_flow_insights_with_steps(
         detailed_insights_df,
         workflow_sequences,
