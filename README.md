@@ -9,7 +9,7 @@ The repository consists of the following key directories:
 
 - **`ML_POC/`** - Final proof of concept (PoC) implementation of the tool
 - **`ML_attempt/`** - Early ML model attempts and experiments.
-- **`MilestoneGUI/`** - Milestone demonstration with a GUI for testing logic flaws.
+- **`MilestonewGUI/`** - Milestone demonstration with a GUI for testing logic flaws.
 
 ---
 
