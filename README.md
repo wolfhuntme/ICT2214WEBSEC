@@ -17,16 +17,16 @@ pip install -r requirement.txt
 4. Input command "git lfs pull".
 5. You should see a venv.zip Virtual Environment File.
 
-### How to run milestone app demonsration (Coupon & Bid ID Exploit):
+### How to run milestone app demonsration (MilestonewGUI Folder - Coupon & Bid ID Exploit):
 1. Open a command prompt in Administrative Mode
-2. Go to Projct Directory.
+2. Navigate to the Project Directory.
 3. Unzip venv.zip.
 4. Input command  "venv\Scripts\activate" for virtual environment needed.
 5. Input command "python app.py" to start flask & back-end.
 6. Open "gui.html" via localhost.
 7. Input URL to attack / train.
 
-### How to run Final Proof of Concept Product:
-1. Open a command prompt.
+### How to run Final Proof of Concept Product (ML_POC Folder):
+1. Open a command prompt, navigate to the directory
 2. Input command " python lstm_execute_RL.py".
 
