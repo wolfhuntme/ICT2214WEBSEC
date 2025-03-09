@@ -6,6 +6,15 @@
 pip install flask flask-cors 
 ```
 2. Install [Live Server (Five Server)](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server) VSC(Visual Studio Code) extension by Yannick
+3. Install Graphiviz https://graphviz.org/download/ for your operating system.
+
+
+### Repository Setup Instructions
+1. Open a command prompt.
+2. Input command "git clone https://github.com/wolfhuntme/ICT2214WEBSEC".
+3. Input command "git lfs install".
+4. Input command "git lfs pull".
+5. You should see a venv.zip Virtual Environment File.
 
 ### How to run milestone app demonsration (Coupon & Bid ID Exploit):
 1. Open a command prompt in Administrative Mode
