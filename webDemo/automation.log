@@ -1,0 +1,202 @@
+[INFO] [\U0001f511] Logging in...
+[INFO] [\u2705] Login successful
+[INFO] Navigating to homepage: https://slaying.ddns.net/#/home
+[INFO] [DEBUG] Found script tags: ['//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js', '//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js', 'runtime.js', 'polyfills.js', 'vendor.js', 'main.js']
+[INFO] [DEBUG] Fetching JavaScript from: https://slaying.ddns.net//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js
+[INFO] [DEBUG] Fetching JavaScript from: https://slaying.ddns.net//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js
+[INFO] [DEBUG] Fetching JavaScript from: https://slaying.ddns.net/runtime.js
+[INFO] [DEBUG] Fetching JavaScript from: https://slaying.ddns.net/polyfills.js
+[INFO] [DEBUG] Fetching JavaScript from: https://slaying.ddns.net/vendor.js
+[INFO] [DEBUG] Fetching JavaScript from: https://slaying.ddns.net/main.js
+[INFO] [\u2705] Discovered coupon codes: {'WMNSDY2019': {'validOn': 1551999600000.0, 'discount': 75}}
+[INFO] Discovered Coupon Codes: {'WMNSDY2019': {'validOn': 1551999600000.0, 'discount': 75}}
+[INFO] [ATTACK] Attempting attack on 'bid' with value '4826'
+[INFO] [ATTACK] Initial State: {
+  "sessionStorage": {
+    "bid": "7"
+  },
+  "localStorage": {
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MjMsInVzZXJuYW1lIjoiaGVsbG8iLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IjQ4MmM4MTFkYTVkNWI0YmM2ZDQ5N2ZmYTk4NDkxZTM4Iiwicm9sZSI6ImN1c3RvbWVyIiwiZGVsdXhlVG9rZW4iOiIiLCJsYXN0TG9naW5JcCI6InVuZGVmaW5lZCIsInByb2ZpbGVJbWFnZSI6Ii9hc3NldHMvcHVibGljL2ltYWdlcy91cGxvYWRzL2RlZmF1bHQuc3ZnIiwidG90cFNlY3JldCI6IiIsImlzQWN0aXZlIjp0cnVlLCJjcmVhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjAzOjI5LjUwMyArMDA6MDAiLCJ1cGRhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjI3OjAyLjQ4MyArMDA6MDAiLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE3NDA0NTk0Mjl9.lanNloT837vuA4801XXMjyew3QWbfGw1rsiNB0AW4oYdRB0YQrUPs0AgY_MX6_ksCECLz9QAUS9Qt8F8bMT5HI-NFrmzsVoOOG1FGQKF2WMyZr2rOlmpzeCwDLp-8ztbqd9fY9LEbwCqkoKx6-so5Jxixc7xe8PWSoI6ggXxs0U"
+  },
+  "cookies": [
+    {
+      "name": "language",
+      "value": "en",
+      "domain": "slaying.ddns.net",
+      "path": "/",
+      "expires": 1771995423,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "welcomebanner_status",
+      "value": "dismiss",
+      "domain": "slaying.ddns.net",
+      "path": "/",
+      "expires": 1771995428,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "token",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MjMsInVzZXJuYW1lIjoiaGVsbG8iLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IjQ4MmM4MTFkYTVkNWI0YmM2ZDQ5N2ZmYTk4NDkxZTM4Iiwicm9sZSI6ImN1c3RvbWVyIiwiZGVsdXhlVG9rZW4iOiIiLCJsYXN0TG9naW5JcCI6InVuZGVmaW5lZCIsInByb2ZpbGVJbWFnZSI6Ii9hc3NldHMvcHVibGljL2ltYWdlcy91cGxvYWRzL2RlZmF1bHQuc3ZnIiwidG90cFNlY3JldCI6IiIsImlzQWN0aXZlIjp0cnVlLCJjcmVhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjAzOjI5LjUwMyArMDA6MDAiLCJ1cGRhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjI3OjAyLjQ4MyArMDA6MDAiLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE3NDA0NTk0Mjl9.lanNloT837vuA4801XXMjyew3QWbfGw1rsiNB0AW4oYdRB0YQrUPs0AgY_MX6_ksCECLz9QAUS9Qt8F8bMT5HI-NFrmzsVoOOG1FGQKF2WMyZr2rOlmpzeCwDLp-8ztbqd9fY9LEbwCqkoKx6-so5Jxixc7xe8PWSoI6ggXxs0U",
+      "domain": "slaying.ddns.net",
+      "path": "/",
+      "expires": 1740488228,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ]
+}
+[INFO] [ATTACK] Generated attack string: Generate an attack payload to modify the variable 'bid'. Make sure the attack is unique.
+
+defmodule my_spin_spin_def.py do |t|... | t2 = defmodule my_spin_
+[INFO] [ATTACK] Before attack - Variable 'bid': 7
+[INFO] [ATTACK] After attack - Variable 'bid': 4826
+[INFO] [DIFFERENCE] Value of 'bid' changed from '7' to '4826'
+[INFO] [ATTACK] Attempting attack on 'token' with value '4511'
+[INFO] [ATTACK] token is encrypted. Attempting to exploit encryption.
+[INFO] [ATTACK] Initial State: {
+  "sessionStorage": {
+    "bid": "4826"
+  },
+  "localStorage": {
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MjMsInVzZXJuYW1lIjoiaGVsbG8iLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IjQ4MmM4MTFkYTVkNWI0YmM2ZDQ5N2ZmYTk4NDkxZTM4Iiwicm9sZSI6ImN1c3RvbWVyIiwiZGVsdXhlVG9rZW4iOiIiLCJsYXN0TG9naW5JcCI6InVuZGVmaW5lZCIsInByb2ZpbGVJbWFnZSI6Ii9hc3NldHMvcHVibGljL2ltYWdlcy91cGxvYWRzL2RlZmF1bHQuc3ZnIiwidG90cFNlY3JldCI6IiIsImlzQWN0aXZlIjp0cnVlLCJjcmVhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjAzOjI5LjUwMyArMDA6MDAiLCJ1cGRhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjI3OjAyLjQ4MyArMDA6MDAiLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE3NDA0NTk0Mjl9.lanNloT837vuA4801XXMjyew3QWbfGw1rsiNB0AW4oYdRB0YQrUPs0AgY_MX6_ksCECLz9QAUS9Qt8F8bMT5HI-NFrmzsVoOOG1FGQKF2WMyZr2rOlmpzeCwDLp-8ztbqd9fY9LEbwCqkoKx6-so5Jxixc7xe8PWSoI6ggXxs0U"
+  },
+  "cookies": [
+    {
+      "name": "language",
+      "value": "en",
+      "domain": "slaying.ddns.net",
+      "path": "/",
+      "expires": 1771995423,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "welcomebanner_status",
+      "value": "dismiss",
+      "domain": "slaying.ddns.net",
+      "path": "/",
+      "expires": 1771995428,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "token",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MjMsInVzZXJuYW1lIjoiaGVsbG8iLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IjQ4MmM4MTFkYTVkNWI0YmM2ZDQ5N2ZmYTk4NDkxZTM4Iiwicm9sZSI6ImN1c3RvbWVyIiwiZGVsdXhlVG9rZW4iOiIiLCJsYXN0TG9naW5JcCI6InVuZGVmaW5lZCIsInByb2ZpbGVJbWFnZSI6Ii9hc3NldHMvcHVibGljL2ltYWdlcy91cGxvYWRzL2RlZmF1bHQuc3ZnIiwidG90cFNlY3JldCI6IiIsImlzQWN0aXZlIjp0cnVlLCJjcmVhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjAzOjI5LjUwMyArMDA6MDAiLCJ1cGRhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjI3OjAyLjQ4MyArMDA6MDAiLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE3NDA0NTk0Mjl9.lanNloT837vuA4801XXMjyew3QWbfGw1rsiNB0AW4oYdRB0YQrUPs0AgY_MX6_ksCECLz9QAUS9Qt8F8bMT5HI-NFrmzsVoOOG1FGQKF2WMyZr2rOlmpzeCwDLp-8ztbqd9fY9LEbwCqkoKx6-so5Jxixc7xe8PWSoI6ggXxs0U",
+      "domain": "slaying.ddns.net",
+      "path": "/",
+      "expires": 1740488228,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ]
+}
+[INFO] [ATTACK] Generated attack string: Generate an attack payload to modify the variable 'token'. Make sure the attack is unique. The value of 'token' is the key to modify the key. Also, 'token' may not be unique in a particular user profile in particular user
+[INFO] [ATTACK] Before attack - Variable 'token': eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MjMsInVzZXJuYW1lIjoiaGVsbG8iLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IjQ4MmM4MTFkYTVkNWI0YmM2ZDQ5N2ZmYTk4NDkxZTM4Iiwicm9sZSI6ImN1c3RvbWVyIiwiZGVsdXhlVG9rZW4iOiIiLCJsYXN0TG9naW5JcCI6InVuZGVmaW5lZCIsInByb2ZpbGVJbWFnZSI6Ii9hc3NldHMvcHVibGljL2ltYWdlcy91cGxvYWRzL2RlZmF1bHQuc3ZnIiwidG90cFNlY3JldCI6IiIsImlzQWN0aXZlIjp0cnVlLCJjcmVhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjAzOjI5LjUwMyArMDA6MDAiLCJ1cGRhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjI3OjAyLjQ4MyArMDA6MDAiLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE3NDA0NTk0Mjl9.lanNloT837vuA4801XXMjyew3QWbfGw1rsiNB0AW4oYdRB0YQrUPs0AgY_MX6_ksCECLz9QAUS9Qt8F8bMT5HI-NFrmzsVoOOG1FGQKF2WMyZr2rOlmpzeCwDLp-8ztbqd9fY9LEbwCqkoKx6-so5Jxixc7xe8PWSoI6ggXxs0U
+[INFO] [ATTACK] After attack - Variable 'token': 9569
+[INFO] [DIFFERENCE] Value of 'token' changed from 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MjMsInVzZXJuYW1lIjoiaGVsbG8iLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IjQ4MmM4MTFkYTVkNWI0YmM2ZDQ5N2ZmYTk4NDkxZTM4Iiwicm9sZSI6ImN1c3RvbWVyIiwiZGVsdXhlVG9rZW4iOiIiLCJsYXN0TG9naW5JcCI6InVuZGVmaW5lZCIsInByb2ZpbGVJbWFnZSI6Ii9hc3NldHMvcHVibGljL2ltYWdlcy91cGxvYWRzL2RlZmF1bHQuc3ZnIiwidG90cFNlY3JldCI6IiIsImlzQWN0aXZlIjp0cnVlLCJjcmVhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjAzOjI5LjUwMyArMDA6MDAiLCJ1cGRhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjI3OjAyLjQ4MyArMDA6MDAiLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE3NDA0NTk0Mjl9.lanNloT837vuA4801XXMjyew3QWbfGw1rsiNB0AW4oYdRB0YQrUPs0AgY_MX6_ksCECLz9QAUS9Qt8F8bMT5HI-NFrmzsVoOOG1FGQKF2WMyZr2rOlmpzeCwDLp-8ztbqd9fY9LEbwCqkoKx6-so5Jxixc7xe8PWSoI6ggXxs0U' to '9569'
+[INFO] [STATE] State before attacks: {
+  "sessionStorage": {
+    "bid": "4826"
+  },
+  "localStorage": {
+    "token": "9569"
+  },
+  "cookies": [
+    {
+      "name": "language",
+      "value": "en",
+      "domain": "slaying.ddns.net",
+      "path": "/",
+      "expires": 1771995423,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "welcomebanner_status",
+      "value": "dismiss",
+      "domain": "slaying.ddns.net",
+      "path": "/",
+      "expires": 1771995428,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "token",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MjMsInVzZXJuYW1lIjoiaGVsbG8iLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IjQ4MmM4MTFkYTVkNWI0YmM2ZDQ5N2ZmYTk4NDkxZTM4Iiwicm9sZSI6ImN1c3RvbWVyIiwiZGVsdXhlVG9rZW4iOiIiLCJsYXN0TG9naW5JcCI6InVuZGVmaW5lZCIsInByb2ZpbGVJbWFnZSI6Ii9hc3NldHMvcHVibGljL2ltYWdlcy91cGxvYWRzL2RlZmF1bHQuc3ZnIiwidG90cFNlY3JldCI6IiIsImlzQWN0aXZlIjp0cnVlLCJjcmVhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjAzOjI5LjUwMyArMDA6MDAiLCJ1cGRhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjI3OjAyLjQ4MyArMDA6MDAiLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE3NDA0NTk0Mjl9.lanNloT837vuA4801XXMjyew3QWbfGw1rsiNB0AW4oYdRB0YQrUPs0AgY_MX6_ksCECLz9QAUS9Qt8F8bMT5HI-NFrmzsVoOOG1FGQKF2WMyZr2rOlmpzeCwDLp-8ztbqd9fY9LEbwCqkoKx6-so5Jxixc7xe8PWSoI6ggXxs0U",
+      "domain": "slaying.ddns.net",
+      "path": "/",
+      "expires": 1740488228,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ]
+}
+[INFO] [ATTACK] Attempted attack on 'bid' with value '4826'
+[INFO] [ATTACK SUCCESS] bid successfully modified to 4826
+[INFO] [ATTACK] Attempted attack on 'token' with value '9569'
+[INFO] [ATTACK SUCCESS] token successfully modified to 9569
+[INFO] [STATE] State after attacks: {
+  "sessionStorage": {
+    "bid": "4826"
+  },
+  "localStorage": {
+    "token": "9569"
+  },
+  "cookies": [
+    {
+      "name": "language",
+      "value": "en",
+      "domain": "slaying.ddns.net",
+      "path": "/",
+      "expires": 1771995423,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "welcomebanner_status",
+      "value": "dismiss",
+      "domain": "slaying.ddns.net",
+      "path": "/",
+      "expires": 1771995428,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "token",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MjMsInVzZXJuYW1lIjoiaGVsbG8iLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IjQ4MmM4MTFkYTVkNWI0YmM2ZDQ5N2ZmYTk4NDkxZTM4Iiwicm9sZSI6ImN1c3RvbWVyIiwiZGVsdXhlVG9rZW4iOiIiLCJsYXN0TG9naW5JcCI6InVuZGVmaW5lZCIsInByb2ZpbGVJbWFnZSI6Ii9hc3NldHMvcHVibGljL2ltYWdlcy91cGxvYWRzL2RlZmF1bHQuc3ZnIiwidG90cFNlY3JldCI6IiIsImlzQWN0aXZlIjp0cnVlLCJjcmVhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjAzOjI5LjUwMyArMDA6MDAiLCJ1cGRhdGVkQXQiOiIyMDI1LTAyLTI0IDExOjI3OjAyLjQ4MyArMDA6MDAiLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE3NDA0NTk0Mjl9.lanNloT837vuA4801XXMjyew3QWbfGw1rsiNB0AW4oYdRB0YQrUPs0AgY_MX6_ksCECLz9QAUS9Qt8F8bMT5HI-NFrmzsVoOOG1FGQKF2WMyZr2rOlmpzeCwDLp-8ztbqd9fY9LEbwCqkoKx6-so5Jxixc7xe8PWSoI6ggXxs0U",
+      "domain": "slaying.ddns.net",
+      "path": "/",
+      "expires": 1740488228,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ]
+}
+[INFO] [STATE] No change detected.
+[INFO] [PROOF] Verifying if the attack caused a real change...
+[INFO] [PROOF] Attack on 'bid' succeeded. Checking for page response change...
+[INFO] [PROOF] Page content has changed. Attack is successful.
+[INFO] [PROOF] Attack on 'token' succeeded. Checking for page response change...
+[INFO] [PROOF] Page content has changed. Attack is successful.
+[INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[INFO] [33mPress CTRL+C to quit[0m
+[INFO]  * Restarting with stat
+[WARNING] From C:\Users\czexp\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[INFO] [\U0001f511] Logging in...
