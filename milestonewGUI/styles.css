@@ -1,0 +1,14 @@
+input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+button{
+    background-color: white;
+    color: green;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid green;
+    cursor: pointer;
+  }
