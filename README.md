@@ -1,6 +1,6 @@
 # **ICT2214 WEBSEC Project: LogicDetect**  
 
-LogicDetect is an automated business logic flaw detector that uses **Machine Learning (ML)** to exploit vulnerabilities such as **Coupon Manipulation** and **Bid ID Exploitation**.
+LogicDetect is an automated business logic flaw detector that uses **Machine Learning (ML)** to exploit vulnerabilities.
 
 ---
 
