@@ -1,0 +1,4 @@
+STEP,URL,SELECTOR,ACTION,SUCCESS,STATE CHANGE,EXPECTED,ERROR,RL DECISION,REWARD,USED SELECTOR
+1,https://slaying.ddns.net#/login,input#email,input,Y,Y,N,,[RL Decision Placeholder],10,input#email
+2,https://slaying.ddns.net#/login,input#password,input,Y,N,N,,[RL Decision Placeholder],10,input#password
+3,https://slaying.ddns.net#/login,button#loginButton,click,Y,Y,N,,[RL Decision Placeholder],15,button#loginButton

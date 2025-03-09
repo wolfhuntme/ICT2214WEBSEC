@@ -1,0 +1,1257 @@
+[
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-button.mat-button-base",
+        "name_role": "menu (navigation)",
+        "url": "https://slaying.ddns.net",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.buttons.mat-button.mat-button-base",
+        "name_role": "OWASP Juice Shop (navigation)",
+        "url": "https://slaying.ddns.net",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button#navbarAccount",
+        "name_role": "account_circleAccount (navigation)",
+        "url": "https://slaying.ddns.net",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-menu-trigger.buttons.mat-button.mat-button-base",
+        "name_role": "languageEN (navigation)",
+        "url": "https://slaying.ddns.net",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-paginator-navigation-previous.mat-icon-button.mat-button-base.mat-button-disabled",
+        "name_role": "Previous page (navigation)",
+        "url": "https://slaying.ddns.net",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-paginator-navigation-next.mat-icon-button.mat-button-base",
+        "name_role": "Next page (navigation)",
+        "url": "https://slaying.ddns.net",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-button.mat-button-base",
+        "name_role": "Force page reload (navigation)",
+        "url": "https://slaying.ddns.net",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-raised-button.mat-button-base.mat-warn.ng-star-inserted",
+        "name_role": "schoolHelp getting started (navigation)",
+        "url": "https://slaying.ddns.net",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.close-dialog.mat-raised-button.mat-button-base.mat-primary.ng-star-inserted",
+        "name_role": "visibility_offDismiss (navigation)",
+        "url": "https://slaying.ddns.net",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#mat-input-0",
+        "name_role": "Unnamed (text)",
+        "url": "https://slaying.ddns.net",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "javascript_data",
+        "url": "https://slaying.ddns.net",
+        "page_title": "OWASP Juice Shop",
+        "local_storage": "{}",
+        "session_storage": "{}",
+        "javascript_variables": [
+            "innerWidth",
+            "outerWidth",
+            "oninvalid",
+            "onpagehide",
+            "__zone_symbol__ononinvalidpatched",
+            "__zone_symbol__ononpagehidepatched",
+            "__zone_symbol__pagehidefalse"
+        ]
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-button.mat-button-base",
+        "name_role": "menu (navigation)",
+        "url": "https://slaying.ddns.net#/contact",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.buttons.mat-button.mat-button-base",
+        "name_role": "OWASP Juice Shop (navigation)",
+        "url": "https://slaying.ddns.net#/contact",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button#navbarAccount",
+        "name_role": "account_circleAccount (navigation)",
+        "url": "https://slaying.ddns.net#/contact",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-menu-trigger.buttons.mat-button.mat-button-base",
+        "name_role": "languageEN (navigation)",
+        "url": "https://slaying.ddns.net#/contact",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button#submitButton",
+        "name_role": "sendSubmit (submit)",
+        "url": "https://slaying.ddns.net#/contact",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#mat-input-0",
+        "name_role": "Unnamed (text)",
+        "url": "https://slaying.ddns.net#/contact",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#userId",
+        "name_role": "Unnamed (text)",
+        "url": "https://slaying.ddns.net#/contact",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#mat-input-1",
+        "name_role": "Field with the name of the author (text)",
+        "url": "https://slaying.ddns.net#/contact",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#captchaControl",
+        "name_role": "Please enter the result of the CAPTCHA. (text)",
+        "url": "https://slaying.ddns.net#/contact",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "javascript_data",
+        "url": "https://slaying.ddns.net#/contact",
+        "page_title": "OWASP Juice Shop",
+        "local_storage": "{}",
+        "session_storage": "{}",
+        "javascript_variables": [
+            "innerWidth",
+            "outerWidth",
+            "oninvalid",
+            "onpagehide",
+            "__zone_symbol__ononinvalidpatched",
+            "__zone_symbol__ononpagehidepatched",
+            "__zone_symbol__pagehidefalse"
+        ]
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-button.mat-button-base",
+        "name_role": "menu (navigation)",
+        "url": "https://slaying.ddns.net#/login",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.buttons.mat-button.mat-button-base",
+        "name_role": "OWASP Juice Shop (navigation)",
+        "url": "https://slaying.ddns.net#/login",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button#navbarAccount",
+        "name_role": "account_circleAccount (navigation)",
+        "url": "https://slaying.ddns.net#/login",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-menu-trigger.buttons.mat-button.mat-button-base",
+        "name_role": "languageEN (navigation)",
+        "url": "https://slaying.ddns.net#/login",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-icon-button.mat-button-base.ng-tns-c21-15.ng-star-inserted",
+        "name_role": "Button to display the password (navigation)",
+        "url": "https://slaying.ddns.net#/login",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button#loginButton",
+        "name_role": "exit_to_appLog in (navigation)",
+        "url": "https://slaying.ddns.net#/login",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#mat-input-0",
+        "name_role": "Unnamed (text)",
+        "url": "https://slaying.ddns.net#/login",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#email",
+        "name_role": "email (text)",
+        "url": "https://slaying.ddns.net#/login",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#password",
+        "name_role": "password (password)",
+        "url": "https://slaying.ddns.net#/login",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#rememberMe-input",
+        "name_role": "Checkbox to stay logged in or not logged in (text)",
+        "url": "https://slaying.ddns.net#/login",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "javascript_data",
+        "url": "https://slaying.ddns.net#/login",
+        "page_title": "OWASP Juice Shop",
+        "local_storage": "{}",
+        "session_storage": "{}",
+        "javascript_variables": [
+            "innerWidth",
+            "outerWidth",
+            "oninvalid",
+            "onpagehide",
+            "__zone_symbol__ononinvalidpatched",
+            "__zone_symbol__ononpagehidepatched",
+            "__zone_symbol__pagehidefalse"
+        ]
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-button.mat-button-base",
+        "name_role": "menu (navigation)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.buttons.mat-button.mat-button-base",
+        "name_role": "OWASP Juice Shop (navigation)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button#navbarAccount",
+        "name_role": "account_circleAccount (navigation)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-menu-trigger.buttons.mat-button.mat-button-base",
+        "name_role": "languageEN (navigation)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-icon-button.mat-button-base",
+        "name_role": "Tweet (navigation)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-icon-button.mat-button-base",
+        "name_role": "Tweet (navigation)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-icon-button.mat-button-base",
+        "name_role": "Tweet (navigation)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-icon-button.mat-button-base",
+        "name_role": "Tweet (navigation)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-icon-button.mat-button-base",
+        "name_role": "Tweet (navigation)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-icon-button.mat-button-base",
+        "name_role": "Tweet (navigation)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-icon-button.mat-button-base",
+        "name_role": "Tweet (navigation)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-icon-button.mat-button-base",
+        "name_role": "Tweet (navigation)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-icon-button.mat-button-base",
+        "name_role": "Tweet (navigation)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-icon-button.mat-button-base",
+        "name_role": "Tweet (navigation)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#mat-input-0",
+        "name_role": "Unnamed (text)",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "javascript_data",
+        "url": "https://slaying.ddns.net#/photo-wall",
+        "page_title": "OWASP Juice Shop",
+        "local_storage": "{}",
+        "session_storage": "{}",
+        "javascript_variables": [
+            "innerWidth",
+            "outerWidth",
+            "oninvalid",
+            "onpagehide",
+            "__zone_symbol__ononinvalidpatched",
+            "__zone_symbol__ononpagehidepatched",
+            "__zone_symbol__pagehidefalse"
+        ]
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-button.mat-button-base",
+        "name_role": "menu (navigation)",
+        "url": "https://slaying.ddns.net#/about",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.buttons.mat-button.mat-button-base",
+        "name_role": "OWASP Juice Shop (navigation)",
+        "url": "https://slaying.ddns.net#/about",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button#navbarAccount",
+        "name_role": "account_circleAccount (navigation)",
+        "url": "https://slaying.ddns.net#/about",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-menu-trigger.buttons.mat-button.mat-button-base",
+        "name_role": "languageEN (navigation)",
+        "url": "https://slaying.ddns.net#/about",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-raised-button.mat-button-base.mat-accent",
+        "name_role": "Twitter (navigation)",
+        "url": "https://slaying.ddns.net#/about",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-raised-button.mat-button-base.mat-accent",
+        "name_role": "Facebook (navigation)",
+        "url": "https://slaying.ddns.net#/about",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-raised-button.mat-button-base.mat-accent",
+        "name_role": "Slack (navigation)",
+        "url": "https://slaying.ddns.net#/about",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-raised-button.mat-button-base.mat-accent",
+        "name_role": "Reddit (navigation)",
+        "url": "https://slaying.ddns.net#/about",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-raised-button.mat-button-base.mat-accent",
+        "name_role": "Press Kit (navigation)",
+        "url": "https://slaying.ddns.net#/about",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-raised-button.mat-button-base.mat-accent",
+        "name_role": "NFT (navigation)",
+        "url": "https://slaying.ddns.net#/about",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#mat-input-0",
+        "name_role": "Unnamed (text)",
+        "url": "https://slaying.ddns.net#/about",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "javascript_data",
+        "url": "https://slaying.ddns.net#/about",
+        "page_title": "OWASP Juice Shop",
+        "local_storage": "{}",
+        "session_storage": "{}",
+        "javascript_variables": [
+            "innerWidth",
+            "outerWidth",
+            "oninvalid",
+            "onpagehide",
+            "__zone_symbol__ononinvalidpatched",
+            "__zone_symbol__ononpagehidepatched",
+            "__zone_symbol__pagehidefalse"
+        ]
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-button.mat-button-base",
+        "name_role": "menu (navigation)",
+        "url": "https://slaying.ddns.net#/forgot-password",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.buttons.mat-button.mat-button-base",
+        "name_role": "OWASP Juice Shop (navigation)",
+        "url": "https://slaying.ddns.net#/forgot-password",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button#navbarAccount",
+        "name_role": "account_circleAccount (navigation)",
+        "url": "https://slaying.ddns.net#/forgot-password",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-menu-trigger.buttons.mat-button.mat-button-base",
+        "name_role": "languageEN (navigation)",
+        "url": "https://slaying.ddns.net#/forgot-password",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button#resetButton",
+        "name_role": "Change (navigation)",
+        "url": "https://slaying.ddns.net#/forgot-password",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#mat-input-0",
+        "name_role": "Unnamed (text)",
+        "url": "https://slaying.ddns.net#/forgot-password",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#email",
+        "name_role": "Enter your email (text)",
+        "url": "https://slaying.ddns.net#/forgot-password",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#securityAnswer",
+        "name_role": "Field for the answer to the security question (text)",
+        "url": "https://slaying.ddns.net#/forgot-password",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#newPassword",
+        "name_role": "Field for New Password (password)",
+        "url": "https://slaying.ddns.net#/forgot-password",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#newPasswordRepeat",
+        "name_role": "Field to confirm the new password (password)",
+        "url": "https://slaying.ddns.net#/forgot-password",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#mat-slide-toggle-1-input",
+        "name_role": "Unnamed (text)",
+        "url": "https://slaying.ddns.net#/forgot-password",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "javascript_data",
+        "url": "https://slaying.ddns.net#/forgot-password",
+        "page_title": "OWASP Juice Shop",
+        "local_storage": "{}",
+        "session_storage": "{}",
+        "javascript_variables": [
+            "innerWidth",
+            "outerWidth",
+            "oninvalid",
+            "onpagehide",
+            "__zone_symbol__ononinvalidpatched",
+            "__zone_symbol__ononpagehidepatched",
+            "__zone_symbol__pagehidefalse"
+        ]
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-button.mat-button-base",
+        "name_role": "menu (navigation)",
+        "url": "https://slaying.ddns.net#/register",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.buttons.mat-button.mat-button-base",
+        "name_role": "OWASP Juice Shop (navigation)",
+        "url": "https://slaying.ddns.net#/register",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button#navbarAccount",
+        "name_role": "account_circleAccount (navigation)",
+        "url": "https://slaying.ddns.net#/register",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-menu-trigger.buttons.mat-button.mat-button-base",
+        "name_role": "languageEN (navigation)",
+        "url": "https://slaying.ddns.net#/register",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button#registerButton",
+        "name_role": "person_addRegister (navigation)",
+        "url": "https://slaying.ddns.net#/register",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#mat-input-0",
+        "name_role": "Unnamed (text)",
+        "url": "https://slaying.ddns.net#/register",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#emailControl",
+        "name_role": "Email address field (text)",
+        "url": "https://slaying.ddns.net#/register",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#passwordControl",
+        "name_role": "Field for the password (password)",
+        "url": "https://slaying.ddns.net#/register",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#repeatPasswordControl",
+        "name_role": "Field to confirm the password (password)",
+        "url": "https://slaying.ddns.net#/register",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#mat-slide-toggle-2-input",
+        "name_role": "Unnamed (text)",
+        "url": "https://slaying.ddns.net#/register",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#securityAnswerControl",
+        "name_role": "Answer to your security question (text)",
+        "url": "https://slaying.ddns.net#/register",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "javascript_data",
+        "url": "https://slaying.ddns.net#/register",
+        "page_title": "OWASP Juice Shop",
+        "local_storage": "{}",
+        "session_storage": "{}",
+        "javascript_variables": [
+            "innerWidth",
+            "outerWidth",
+            "oninvalid",
+            "onpagehide",
+            "__zone_symbol__ononinvalidpatched",
+            "__zone_symbol__ononpagehidepatched",
+            "__zone_symbol__pagehidefalse"
+        ]
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-button.mat-button-base",
+        "name_role": "menu (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.buttons.mat-button.mat-button-base",
+        "name_role": "OWASP Juice Shop (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button#navbarAccount",
+        "name_role": "account_circleAccount (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.mat-menu-trigger.buttons.mat-button.mat-button-base",
+        "name_role": "languageEN (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button#reset-filters",
+        "name_role": "reset all filters (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-tooltip-trigger.additional-settings-button.mat-icon-button.mat-button-base",
+        "name_role": "settings (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.pill.selected",
+        "name_role": "All (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "XSS (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "Sensitive Data Exposure (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "Improper Input Validation (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "Broken Access Control (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "Unvalidated Redirects (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "Vulnerable Components (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "Broken Authentication (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "Security through Obscurity (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "Insecure Deserialization (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "Miscellaneous (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "Broken Anti Automation (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "Injection (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "Security Misconfiguration (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "Cryptographic Issues (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.pill.ng-star-inserted",
+        "name_role": "XXE (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-focus-indicator.mat-button.mat-button-base.mat-accent",
+        "name_role": "Hide disabled challenges (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.not-completable.ng-star-inserted",
+        "name_role": "school_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.not-completable.ng-star-inserted",
+        "name_role": "school_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.not-completable.ng-star-inserted",
+        "name_role": "school_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.not-completable.ng-star-inserted",
+        "name_role": "school_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.not-completable.ng-star-inserted",
+        "name_role": "school_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.not-completable.ng-star-inserted",
+        "name_role": "school_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.not-completable.ng-star-inserted",
+        "name_role": "school_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.not-completable.ng-star-inserted",
+        "name_role": "school_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.not-completable.ng-star-inserted",
+        "name_role": "school_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.not-completable.ng-star-inserted",
+        "name_role": "school_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.not-completable.ng-star-inserted",
+        "name_role": "school_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.not-completable.ng-star-inserted",
+        "name_role": "school_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "info_outline (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "button",
+        "selector": "button.mat-tooltip-trigger.badge.ng-star-inserted",
+        "name_role": "code (navigation)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#mat-input-0",
+        "name_role": "Unnamed (text)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "input",
+        "selector": "input#mat-input-14",
+        "name_role": "Unnamed (text)",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop"
+    },
+    {
+        "type": "javascript_data",
+        "url": "https://slaying.ddns.net#/score-board",
+        "page_title": "OWASP Juice Shop",
+        "local_storage": "{}",
+        "session_storage": "{}",
+        "javascript_variables": [
+            "innerWidth",
+            "outerWidth",
+            "oninvalid",
+            "onpagehide",
+            "__zone_symbol__ononinvalidpatched",
+            "__zone_symbol__ononpagehidepatched",
+            "__zone_symbol__pagehidefalse"
+        ]
+    }
+]

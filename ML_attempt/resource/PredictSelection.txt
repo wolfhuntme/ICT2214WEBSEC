@@ -1,0 +1,4 @@
+<EOS>
+https://slaying.ddns.net#/login | input#email OWASP Juice Shop | Important | 0.8152
+https://slaying.ddns.net#/login | input#password OWASP Juice Shop | Important | 0.8631
+https://slaying.ddns.net#/login | button#loginButton OWASP Juice Shop | Important | 0.8898
