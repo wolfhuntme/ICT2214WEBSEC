@@ -4,6 +4,7 @@
 1. Install the following libraries: <br />
 ```sh
 pip install flask flask-cors 
+pip install -r requirement.txt
 ```
 2. Install [Live Server (Five Server)](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server) VSC(Visual Studio Code) extension by Yannick
 3. Install Graphiviz https://graphviz.org/download/ for your operating system.
