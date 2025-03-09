@@ -55,12 +55,12 @@ Follow these steps to clone and set up the repository:
 
 ## **Running the Milestone Demonstration (GUI for Coupon & Bid ID Exploits)**  
 
-To run the milestone app demonstration (found in `MilestoneGUI/`), follow these steps:
+To run the milestone app demonstration (found in `MilestonewGUI/`), follow these steps:
 
 1. Open a command prompt **in Administrator mode**.  
 2. Navigate to the milestone directory:
    ```sh
-   cd MilestoneGUI
+   cd MilestonewGUI
    ```
 3. Unzip the virtual environment (`venv.zip`).  
 4. Activate the virtual environment:  
